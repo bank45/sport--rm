@@ -1,0 +1,31 @@
+<h2 class="col text-center">Заполните ваш профиль:</h2><br>
+<form class="col text-center" action="profile" method="POST">
+
+    <label for="firstName">Ваше имя:</label><br>
+    <input name="firstName" id="firstName" placeholder="Пётр" value={{user.firstName}}></input><br><br>
+
+    <label for="lastName">Ваша фамилия:</label><br>
+    <input name="lastName" id="lastName" placeholder="Иванов"value={{user.lastName}}></input><br><br>
+
+    <label for="phone">Телефон</label><br>
+    <input name="phone" id="phone" placeholder="+7 (999) 123-45-67" value={{user.phone}} ></input><br><br>
+
+    <label for="gender">Пол: </label>
+    {{!-- <form> --}}
+       
+        <span><input name="gender" for="gender" type="radio" value="men" {{#ifCond user.gender 'men'}} checked {{/ifCond}}   >муж    </input></span>
+        <span></span><input name="gender" for="gender" type="radio" value="woman" {{#ifCond user.gender 'woman'}} checked {{/ifCond}}>    жен</input></span>
+    {{!-- </form> --}}
+<br>
+    <label for="height">Ваш рост:</label><br>
+    <input name="height" id="height" placeholder="180" value={{user.height}} ></input><br><br>
+
+    <label for="weight">Ваш вес:</label><br>
+    <input name="weight" id="weight" placeholder="75" value={{user.weight}}></input><br><br>
+
+    <label for="age">Ваш возраст:</label><br>
+    <input name="age" id="age" placeholder="29" value={{user.age}}></input><br><br>
+
+    <input type="submit" value="Сохранить"></input>
+
+</form>
