@@ -40,8 +40,13 @@ a {
 
 .prev-grid {
   display: grid;
-  grid-template-columns: repeat(10, 10%);
+  /* grid-template-columns: repeat(10, 10%); */
   border: 1px solid black;
+}
+
+.prev-flex-block {
+  min-width:100px;
+
 }
 
 .half {
@@ -53,9 +58,7 @@ a {
 }
 
 .column {
-
   border: 0px solid rgb(27, 27, 27);
-
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), ;
   color: azure;
   padding: 2rem;
@@ -95,6 +98,38 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(/imj/dna-3539309_1920.jpg);
   background-size: 100% auto;
   align-content: center;
-  padding: 50px;
+  padding: 2rem;
   color: white;
+}
+
+.column1 {
+  width: 70%;
+  margin: 30px auto;
+}
+
+.card {
+  background-color: rgb(4, 45, 68)
+}
+
+.modal-title {
+  color: black;
+}
+
+.form-profile, 
+.form-new-order{
+  width: 300px;
+}
+
+.control-new-order{
+  margin: 0;
+}
+
+.service-type,
+.delivery-time {
+  width: 270px;
+  height: 39px;
+}
+
+.delivery-time{
+  margin-bottom: 20px;
 }
